@@ -6,5 +6,5 @@ using Xampp as web server and mysql server for the datebase
 2. Update the user info
 3. delete the user from the database
 
-<img src="userhome.png" alt="user registeration page" style="height: 100px; width:100px;"/>
-<img src="usertable.png" alt="user table" style="height: 100px; width:100px;"/>
+<img src="userhome.png" alt="user registeration page" />
+<img src="usertable.png" alt="user table" style="height: 700px; width:700px;"/>
