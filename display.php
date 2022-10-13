@@ -34,9 +34,9 @@ include 'connect.php';
   <tbody>
     <?php
     $sql="select * from `crud`";
-    $result=mysqli_query($con,$sql);
+    $result=mysqli_query($con,$sql);//Procedural style
     if($result){
-      $row=mysqli_fetch_assoc($result);
+      //$row=mysqli_fetch_assoc($result);
       
       while($row=mysqli_fetch_assoc($result)){
         $id=$row['id'];
@@ -51,10 +51,22 @@ include 'connect.php';
         <td>'.$mobile.'</td>
         <td>'.$email.'</td>
         <td>'.$password.'</td>
+        <td> 
+        <button class="btn btn-secondary">
+        <a class="text-light" href="update.php?updateid='.$id.'">update</a>
+        </button>
+        <button class="btn btn-danger">
+        <a class="text-light" href="delete.php?deleteid='.$id.'">delete</a>
+        </button>
+      </td>
        </tr>';
       }
     }
     ?>
+
+    
+     
+    
     </tbody>
 </table>
     <!--
